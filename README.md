@@ -39,10 +39,6 @@ The landing page is designed to promote and market Netflix plans tailored for us
 - Add testimonials or customer reviews section to increase credibility
 - Implement lazy loading for images and video to improve performance
 
-## 🖼️ Preview
-
-![Netflix Kenya Product Landing Page Screenshot](https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg)
-
 ## ✅ License
 
 This project is open source and free to use for learning, practice, and portfolio purposes.
