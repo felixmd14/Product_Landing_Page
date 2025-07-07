@@ -1,0 +1,327 @@
+/* Universal reset */
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base html and body */
+html {
+  scroll-padding-top: 150px;
+}
+
+body {
+  background-color: #1b1b32;
+  color: #dcdcdc;
+}
+
+/* Typography */
+h1, h2 {
+  color: #dcdcdc;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 a, footer p a {
+  color: #e50914;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #e50914;
+}
+
+li {
+  list-style: none;
+}
+
+code {
+  display: block;
+  position: relative;
+  text-align: left;
+  line-height: 2;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  color: #1b1b32;
+  background-color: #dcdcdc;
+}
+
+code p {
+  font-weight: bold;
+}
+
+code ul li {
+  list-style: circle;
+}
+
+/* Header & navigation */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dcdcdc;
+  border-bottom: 1px solid #1b1b32;
+  z-index: 1;
+}
+
+#header-img {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+}
+
+.logo {
+  width: 25vw;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 20px;
+  color: #1b1b32;
+}
+
+/* Main content sections */
+.main-section {
+  margin-top: 60px;
+}
+
+#netflix-kenya {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#netflix-kenya h1, #introduction {
+  margin: 10px;
+}
+
+#netflix-kenya h1:last-of-type {
+  margin-top: 60px;
+}
+
+.form-header,
+form {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#form input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  text-transform: uppercase;
+  color: #e50914;
+  background-color: black;
+}
+
+/* Special classes */
+.whiten {
+  color: #dcdcdc;
+}
+
+.kenyan-flag {
+  font-weight: bold;
+  background: linear-gradient(
+    black 0% 25%,
+    white 25% 37.5%,
+    red 37.5% 62.5%,
+    white 62.5% 75%,
+    green 75% 100%
+  );
+}
+
+/* Plan section */
+.plan {
+  display: flex;
+  color: #1b1b32;
+  background-color: #dcdcdc;
+}
+
+.plan .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  border-right: 2px solid #1b1b32;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+.features h2 {
+  text-align: left;
+  color: #1b1b32;
+}
+
+#promo-video {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#promo-video > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+/* Pricing section */
+.pricing {
+  display: flex;
+  justify-content: center;
+}
+
+#Pricing h1,
+.subtitle {
+  text-align: center;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 4);
+  margin: 10px;
+  color: #1b1b32;
+  background-color: #dcdcdc;
+  border: 1px solid #1b1b32;
+  border-radius: 3px;
+}
+
+button {
+  margin: 15px 0;
+  font-weight: 500;
+  color: #e50914;
+  text-transform: uppercase;
+  background-color: #1b1b32;
+}
+
+/* Footer */
+footer {
+  background-color: #dcdcdc;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer p {
+  display: flex;
+  justify-content: flex-end;
+  color: #1b1b32;
+}
+
+/* Medium screens (tablets, ~768px and below) */
+@media (max-width: 768px) {
+  .logo {
+    width: 40vw;
+  }
+
+  nav > ul {
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  .plan {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan .icon,
+  .features {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #1b1b32;
+  }
+
+  .features h2 {
+    text-align: center;
+  }
+
+  .price {
+    width: 45%;
+  }
+}
+
+/* Small screens (phones, ~480px and below) */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .logo {
+    width: 60vw;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  #netflix-kenya {
+    margin-top: 100px;
+  }
+
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price {
+    width: 80%;
+  }
+
+  #form input[type="submit"] {
+    max-width: 100%;
+  }
+}
